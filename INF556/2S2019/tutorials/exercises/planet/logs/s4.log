@@ -1,0 +1,902 @@
+Calling target program-options parser
+[03:52:51.818] [bmv2] [D] [thread 11615] Set default default entry for table 'planet_fib_match': NoAction - 
+[03:52:51.818] [bmv2] [D] [thread 11615] Set default default entry for table 'sendout': NoAction - 
+Adding interface s4-eth1 as port 1
+[03:52:51.818] [bmv2] [D] [thread 11615] Adding interface s4-eth1 as port 1
+Adding interface s4-eth2 as port 2
+[03:52:51.844] [bmv2] [D] [thread 11615] Adding interface s4-eth2 as port 2
+I1119 03:52:51.872369038   11615 server_builder.cc:247]      Synchronous server. Num CQs: 1, Min pollers: 1, Max Pollers: 2147483647, CQ timeout (msec): 1000
+Server listening on 0.0.0.0:50054
+[03:52:51.875] [bmv2] [I] [thread 11615] Starting Thrift server on port 9093
+[03:52:51.875] [bmv2] [I] [thread 11615] Thrift server was started
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Processing packet received on port 1
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser 'parser': start
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Bytes parsed: 0
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Bytes parsed: 14
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Parser 'parser': end
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Action NoAction
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Applying table 'sendout'
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Table 'sendout': miss
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.876] [bmv2] [T] [thread 11622] [0.0] [cxt 0] Action NoAction
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.876] [bmv2] [D] [thread 11622] [0.0] [cxt 0] Egress port is 0
+[03:52:51.876] [bmv2] [D] [thread 11623] [0.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.876] [bmv2] [D] [thread 11623] [0.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.876] [bmv2] [D] [thread 11623] [0.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.876] [bmv2] [D] [thread 11623] [0.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.876] [bmv2] [D] [thread 11623] [0.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.876] [bmv2] [D] [thread 11627] [0.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Processing packet received on port 1
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser 'parser': start
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.910] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Bytes parsed: 0
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.910] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Bytes parsed: 14
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Parser 'parser': end
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.910] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.910] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.910] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Action NoAction
+[03:52:51.910] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Applying table 'sendout'
+[03:52:51.911] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.911] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Table 'sendout': miss
+[03:52:51.911] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.911] [bmv2] [T] [thread 11622] [1.0] [cxt 0] Action NoAction
+[03:52:51.911] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.911] [bmv2] [D] [thread 11622] [1.0] [cxt 0] Egress port is 0
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Processing packet received on port 1
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser 'parser': start
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Bytes parsed: 0
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Bytes parsed: 14
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Parser 'parser': end
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Action NoAction
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Applying table 'sendout'
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Table 'sendout': miss
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.911] [bmv2] [T] [thread 11622] [2.0] [cxt 0] Action NoAction
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.911] [bmv2] [D] [thread 11622] [2.0] [cxt 0] Egress port is 0
+[03:52:51.911] [bmv2] [D] [thread 11623] [1.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.911] [bmv2] [D] [thread 11623] [1.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.911] [bmv2] [D] [thread 11623] [1.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.911] [bmv2] [D] [thread 11623] [1.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.911] [bmv2] [D] [thread 11623] [1.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.911] [bmv2] [D] [thread 11623] [2.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.911] [bmv2] [D] [thread 11623] [2.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.911] [bmv2] [D] [thread 11623] [2.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.911] [bmv2] [D] [thread 11623] [2.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.911] [bmv2] [D] [thread 11623] [2.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.911] [bmv2] [D] [thread 11627] [1.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[03:52:51.911] [bmv2] [D] [thread 11627] [2.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Processing packet received on port 1
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser 'parser': start
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Bytes parsed: 0
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Bytes parsed: 14
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Parser 'parser': end
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Action NoAction
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Applying table 'sendout'
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Table 'sendout': miss
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.923] [bmv2] [T] [thread 11622] [3.0] [cxt 0] Action NoAction
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.923] [bmv2] [D] [thread 11622] [3.0] [cxt 0] Egress port is 0
+[03:52:51.923] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Processing packet received on port 1
+[03:52:51.923] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser 'parser': start
+[03:52:51.923] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.923] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Bytes parsed: 0
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Bytes parsed: 14
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Parser 'parser': end
+[03:52:51.924] [bmv2] [D] [thread 11623] [3.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.924] [bmv2] [D] [thread 11623] [3.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.924] [bmv2] [D] [thread 11623] [3.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.924] [bmv2] [D] [thread 11623] [3.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.924] [bmv2] [D] [thread 11623] [3.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.924] [bmv2] [D] [thread 11627] [3.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Action NoAction
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Applying table 'sendout'
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Table 'sendout': miss
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.924] [bmv2] [T] [thread 11622] [4.0] [cxt 0] Action NoAction
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.924] [bmv2] [D] [thread 11622] [4.0] [cxt 0] Egress port is 0
+[03:52:51.924] [bmv2] [D] [thread 11623] [4.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.924] [bmv2] [D] [thread 11623] [4.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.924] [bmv2] [D] [thread 11623] [4.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.924] [bmv2] [D] [thread 11623] [4.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.924] [bmv2] [D] [thread 11623] [4.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.924] [bmv2] [D] [thread 11627] [4.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Processing packet received on port 1
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser 'parser': start
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Bytes parsed: 0
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Extracting header 'ethernet'
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Bytes parsed: 14
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Parser 'parser': end
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Pipeline 'ingress': start
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Action NoAction
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Applying table 'sendout'
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Table 'sendout': miss
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Action entry is NoAction - 
+[03:52:51.960] [bmv2] [T] [thread 11622] [5.0] [cxt 0] Action NoAction
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Pipeline 'ingress': end
+[03:52:51.960] [bmv2] [D] [thread 11622] [5.0] [cxt 0] Egress port is 0
+[03:52:51.960] [bmv2] [D] [thread 11623] [5.0] [cxt 0] Pipeline 'egress': start
+[03:52:51.960] [bmv2] [D] [thread 11623] [5.0] [cxt 0] Pipeline 'egress': end
+[03:52:51.960] [bmv2] [D] [thread 11623] [5.0] [cxt 0] Deparser 'deparser': start
+[03:52:51.960] [bmv2] [D] [thread 11623] [5.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:51.960] [bmv2] [D] [thread 11623] [5.0] [cxt 0] Deparser 'deparser': end
+[03:52:51.960] [bmv2] [D] [thread 11627] [5.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Processing packet received on port 1
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser 'parser': start
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.009] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Bytes parsed: 0
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.009] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.010] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Bytes parsed: 14
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Parser 'parser': end
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.010] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.010] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Action NoAction
+[03:52:52.010] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Applying table 'sendout'
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Table 'sendout': miss
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.010] [bmv2] [T] [thread 11622] [6.0] [cxt 0] Action NoAction
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.010] [bmv2] [D] [thread 11622] [6.0] [cxt 0] Egress port is 0
+[03:52:52.010] [bmv2] [D] [thread 11623] [6.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.010] [bmv2] [D] [thread 11623] [6.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.010] [bmv2] [D] [thread 11623] [6.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.010] [bmv2] [D] [thread 11623] [6.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.010] [bmv2] [D] [thread 11623] [6.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.010] [bmv2] [D] [thread 11627] [6.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[03:52:52.023] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Processing packet received on port 2
+[03:52:52.023] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser 'parser': start
+[03:52:52.023] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.023] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.023] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Bytes parsed: 0
+[03:52:52.023] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.024] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Bytes parsed: 14
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Parser 'parser': end
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.024] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.024] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Action NoAction
+[03:52:52.024] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Applying table 'sendout'
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Table 'sendout': miss
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.024] [bmv2] [T] [thread 11622] [7.0] [cxt 0] Action NoAction
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.024] [bmv2] [D] [thread 11622] [7.0] [cxt 0] Egress port is 0
+[03:52:52.024] [bmv2] [D] [thread 11623] [7.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.024] [bmv2] [D] [thread 11623] [7.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.024] [bmv2] [D] [thread 11623] [7.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.024] [bmv2] [D] [thread 11623] [7.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.024] [bmv2] [D] [thread 11623] [7.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.024] [bmv2] [D] [thread 11627] [7.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.030] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Processing packet received on port 2
+[03:52:52.030] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser 'parser': start
+[03:52:52.030] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Bytes parsed: 0
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Bytes parsed: 14
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Parser 'parser': end
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Action NoAction
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Applying table 'sendout'
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Table 'sendout': miss
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.031] [bmv2] [T] [thread 11622] [8.0] [cxt 0] Action NoAction
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.031] [bmv2] [D] [thread 11622] [8.0] [cxt 0] Egress port is 0
+[03:52:52.031] [bmv2] [D] [thread 11623] [8.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.031] [bmv2] [D] [thread 11623] [8.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.031] [bmv2] [D] [thread 11623] [8.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.031] [bmv2] [D] [thread 11623] [8.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.031] [bmv2] [D] [thread 11623] [8.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.031] [bmv2] [D] [thread 11627] [8.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Processing packet received on port 1
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser 'parser': start
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Bytes parsed: 0
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Bytes parsed: 14
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Parser 'parser': end
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Action NoAction
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Applying table 'sendout'
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Table 'sendout': miss
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.037] [bmv2] [T] [thread 11622] [9.0] [cxt 0] Action NoAction
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.037] [bmv2] [D] [thread 11622] [9.0] [cxt 0] Egress port is 0
+[03:52:52.038] [bmv2] [D] [thread 11623] [9.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.038] [bmv2] [D] [thread 11623] [9.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.038] [bmv2] [D] [thread 11623] [9.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.038] [bmv2] [D] [thread 11623] [9.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.038] [bmv2] [D] [thread 11623] [9.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.038] [bmv2] [D] [thread 11627] [9.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Processing packet received on port 1
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser 'parser': start
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Bytes parsed: 0
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Bytes parsed: 14
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Parser 'parser': end
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Action NoAction
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Applying table 'sendout'
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Table 'sendout': miss
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.112] [bmv2] [T] [thread 11622] [10.0] [cxt 0] Action NoAction
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.112] [bmv2] [D] [thread 11622] [10.0] [cxt 0] Egress port is 0
+[03:52:52.112] [bmv2] [D] [thread 11623] [10.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.112] [bmv2] [D] [thread 11623] [10.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.112] [bmv2] [D] [thread 11623] [10.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.112] [bmv2] [D] [thread 11623] [10.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.112] [bmv2] [D] [thread 11623] [10.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.112] [bmv2] [D] [thread 11627] [10.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Processing packet received on port 2
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser 'parser': start
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.131] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Bytes parsed: 0
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.131] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.131] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Bytes parsed: 14
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Parser 'parser': end
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.132] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.132] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Action NoAction
+[03:52:52.132] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Applying table 'sendout'
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Table 'sendout': miss
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.132] [bmv2] [T] [thread 11622] [11.0] [cxt 0] Action NoAction
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.132] [bmv2] [D] [thread 11622] [11.0] [cxt 0] Egress port is 0
+[03:52:52.132] [bmv2] [D] [thread 11623] [11.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.132] [bmv2] [D] [thread 11623] [11.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.132] [bmv2] [D] [thread 11623] [11.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.132] [bmv2] [D] [thread 11623] [11.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.132] [bmv2] [D] [thread 11623] [11.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.132] [bmv2] [D] [thread 11627] [11.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Processing packet received on port 2
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser 'parser': start
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.159] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Bytes parsed: 0
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.159] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Bytes parsed: 14
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Parser 'parser': end
+[03:52:52.159] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.159] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.160] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Action NoAction
+[03:52:52.160] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Applying table 'sendout'
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Table 'sendout': miss
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.160] [bmv2] [T] [thread 11622] [12.0] [cxt 0] Action NoAction
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.160] [bmv2] [D] [thread 11622] [12.0] [cxt 0] Egress port is 0
+[03:52:52.160] [bmv2] [D] [thread 11623] [12.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.160] [bmv2] [D] [thread 11623] [12.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.160] [bmv2] [D] [thread 11623] [12.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.160] [bmv2] [D] [thread 11623] [12.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.160] [bmv2] [D] [thread 11623] [12.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.160] [bmv2] [D] [thread 11627] [12.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Processing packet received on port 2
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser 'parser': start
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Bytes parsed: 0
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Bytes parsed: 14
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Parser 'parser': end
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Action NoAction
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Applying table 'sendout'
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Table 'sendout': miss
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.160] [bmv2] [T] [thread 11622] [13.0] [cxt 0] Action NoAction
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.160] [bmv2] [D] [thread 11622] [13.0] [cxt 0] Egress port is 0
+[03:52:52.160] [bmv2] [D] [thread 11623] [13.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.160] [bmv2] [D] [thread 11623] [13.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.160] [bmv2] [D] [thread 11623] [13.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.160] [bmv2] [D] [thread 11623] [13.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.160] [bmv2] [D] [thread 11623] [13.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.160] [bmv2] [D] [thread 11627] [13.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Processing packet received on port 2
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser 'parser': start
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Bytes parsed: 0
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Bytes parsed: 14
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Parser 'parser': end
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Action NoAction
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Applying table 'sendout'
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Table 'sendout': miss
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.272] [bmv2] [T] [thread 11622] [14.0] [cxt 0] Action NoAction
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.272] [bmv2] [D] [thread 11622] [14.0] [cxt 0] Egress port is 0
+[03:52:52.272] [bmv2] [D] [thread 11623] [14.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.272] [bmv2] [D] [thread 11623] [14.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.272] [bmv2] [D] [thread 11623] [14.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.272] [bmv2] [D] [thread 11623] [14.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.272] [bmv2] [D] [thread 11623] [14.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.272] [bmv2] [D] [thread 11627] [14.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Processing packet received on port 1
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser 'parser': start
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Bytes parsed: 0
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Bytes parsed: 14
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Parser 'parser': end
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Action NoAction
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Applying table 'sendout'
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Table 'sendout': miss
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.287] [bmv2] [T] [thread 11622] [15.0] [cxt 0] Action NoAction
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.287] [bmv2] [D] [thread 11622] [15.0] [cxt 0] Egress port is 0
+[03:52:52.287] [bmv2] [D] [thread 11623] [15.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.287] [bmv2] [D] [thread 11623] [15.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.287] [bmv2] [D] [thread 11623] [15.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.287] [bmv2] [D] [thread 11623] [15.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.287] [bmv2] [D] [thread 11623] [15.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.287] [bmv2] [D] [thread 11627] [15.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Processing packet received on port 2
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser 'parser': start
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Bytes parsed: 0
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Bytes parsed: 14
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Parser 'parser': end
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Action NoAction
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Applying table 'sendout'
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Table 'sendout': miss
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.305] [bmv2] [T] [thread 11622] [16.0] [cxt 0] Action NoAction
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.305] [bmv2] [D] [thread 11622] [16.0] [cxt 0] Egress port is 0
+[03:52:52.305] [bmv2] [D] [thread 11623] [16.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.305] [bmv2] [D] [thread 11623] [16.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.305] [bmv2] [D] [thread 11623] [16.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.305] [bmv2] [D] [thread 11623] [16.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.305] [bmv2] [D] [thread 11623] [16.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.305] [bmv2] [D] [thread 11627] [16.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Processing packet received on port 1
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser 'parser': start
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Bytes parsed: 0
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Bytes parsed: 14
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Parser 'parser': end
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Action NoAction
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Applying table 'sendout'
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Table 'sendout': miss
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.344] [bmv2] [T] [thread 11622] [17.0] [cxt 0] Action NoAction
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.344] [bmv2] [D] [thread 11622] [17.0] [cxt 0] Egress port is 0
+[03:52:52.344] [bmv2] [D] [thread 11623] [17.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.344] [bmv2] [D] [thread 11623] [17.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.344] [bmv2] [D] [thread 11623] [17.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.344] [bmv2] [D] [thread 11623] [17.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.344] [bmv2] [D] [thread 11623] [17.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.344] [bmv2] [D] [thread 11627] [17.0] [cxt 0] Transmitting packet of size 110 out of port 0
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Processing packet received on port 1
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser 'parser': start
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Bytes parsed: 0
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Bytes parsed: 14
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Parser 'parser': end
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Action NoAction
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Applying table 'sendout'
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Table 'sendout': miss
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.361] [bmv2] [T] [thread 11622] [18.0] [cxt 0] Action NoAction
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.361] [bmv2] [D] [thread 11622] [18.0] [cxt 0] Egress port is 0
+[03:52:52.361] [bmv2] [D] [thread 11623] [18.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.361] [bmv2] [D] [thread 11623] [18.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.361] [bmv2] [D] [thread 11623] [18.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.361] [bmv2] [D] [thread 11623] [18.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.361] [bmv2] [D] [thread 11623] [18.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.361] [bmv2] [D] [thread 11627] [18.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Processing packet received on port 2
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser 'parser': start
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Bytes parsed: 0
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Bytes parsed: 14
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Parser 'parser': end
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Action NoAction
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Applying table 'sendout'
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Table 'sendout': miss
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.472] [bmv2] [T] [thread 11622] [19.0] [cxt 0] Action NoAction
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.472] [bmv2] [D] [thread 11622] [19.0] [cxt 0] Egress port is 0
+[03:52:52.472] [bmv2] [D] [thread 11623] [19.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.472] [bmv2] [D] [thread 11623] [19.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.472] [bmv2] [D] [thread 11623] [19.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.472] [bmv2] [D] [thread 11623] [19.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.472] [bmv2] [D] [thread 11623] [19.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.472] [bmv2] [D] [thread 11627] [19.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Processing packet received on port 1
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser 'parser': start
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Bytes parsed: 0
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Bytes parsed: 14
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Parser 'parser': end
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Action NoAction
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Applying table 'sendout'
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Table 'sendout': miss
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.537] [bmv2] [T] [thread 11622] [20.0] [cxt 0] Action NoAction
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.537] [bmv2] [D] [thread 11622] [20.0] [cxt 0] Egress port is 0
+[03:52:52.537] [bmv2] [D] [thread 11623] [20.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.537] [bmv2] [D] [thread 11623] [20.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.537] [bmv2] [D] [thread 11623] [20.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.537] [bmv2] [D] [thread 11623] [20.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.537] [bmv2] [D] [thread 11623] [20.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.537] [bmv2] [D] [thread 11627] [20.0] [cxt 0] Transmitting packet of size 208 out of port 0
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Processing packet received on port 1
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser 'parser': start
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Bytes parsed: 0
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Bytes parsed: 14
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Parser 'parser': end
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Action NoAction
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Applying table 'sendout'
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Table 'sendout': miss
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.561] [bmv2] [T] [thread 11622] [21.0] [cxt 0] Action NoAction
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.561] [bmv2] [D] [thread 11622] [21.0] [cxt 0] Egress port is 0
+[03:52:52.561] [bmv2] [D] [thread 11623] [21.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.561] [bmv2] [D] [thread 11623] [21.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.561] [bmv2] [D] [thread 11623] [21.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.561] [bmv2] [D] [thread 11623] [21.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.561] [bmv2] [D] [thread 11623] [21.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.561] [bmv2] [D] [thread 11627] [21.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Processing packet received on port 1
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser 'parser': start
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Bytes parsed: 0
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Bytes parsed: 14
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Parser 'parser': end
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Action NoAction
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Applying table 'sendout'
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Table 'sendout': miss
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.600] [bmv2] [T] [thread 11622] [22.0] [cxt 0] Action NoAction
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.600] [bmv2] [D] [thread 11622] [22.0] [cxt 0] Egress port is 0
+[03:52:52.600] [bmv2] [D] [thread 11623] [22.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.600] [bmv2] [D] [thread 11623] [22.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.600] [bmv2] [D] [thread 11623] [22.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.600] [bmv2] [D] [thread 11623] [22.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.600] [bmv2] [D] [thread 11623] [22.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.600] [bmv2] [D] [thread 11627] [22.0] [cxt 0] Transmitting packet of size 90 out of port 0
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Processing packet received on port 1
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser 'parser': start
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.740] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Bytes parsed: 0
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.740] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Bytes parsed: 14
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Parser 'parser': end
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.740] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.740] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.740] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Action NoAction
+[03:52:52.741] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Applying table 'sendout'
+[03:52:52.741] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.741] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Table 'sendout': miss
+[03:52:52.741] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.741] [bmv2] [T] [thread 11622] [23.0] [cxt 0] Action NoAction
+[03:52:52.741] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.741] [bmv2] [D] [thread 11622] [23.0] [cxt 0] Egress port is 0
+[03:52:52.741] [bmv2] [D] [thread 11623] [23.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.741] [bmv2] [D] [thread 11623] [23.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.741] [bmv2] [D] [thread 11623] [23.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.741] [bmv2] [D] [thread 11623] [23.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.741] [bmv2] [D] [thread 11623] [23.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.741] [bmv2] [D] [thread 11627] [23.0] [cxt 0] Transmitting packet of size 196 out of port 0
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Processing packet received on port 2
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser 'parser': start
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Bytes parsed: 0
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Bytes parsed: 14
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Parser 'parser': end
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Action NoAction
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Applying table 'sendout'
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Table 'sendout': miss
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.750] [bmv2] [T] [thread 11622] [24.0] [cxt 0] Action NoAction
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.750] [bmv2] [D] [thread 11622] [24.0] [cxt 0] Egress port is 0
+[03:52:52.750] [bmv2] [D] [thread 11623] [24.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.750] [bmv2] [D] [thread 11623] [24.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.750] [bmv2] [D] [thread 11623] [24.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.750] [bmv2] [D] [thread 11623] [24.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.750] [bmv2] [D] [thread 11623] [24.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.750] [bmv2] [D] [thread 11627] [24.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Processing packet received on port 1
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser 'parser': start
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Bytes parsed: 0
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Extracting header 'ethernet'
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Bytes parsed: 14
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Parser 'parser': end
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Pipeline 'ingress': start
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Action NoAction
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Applying table 'sendout'
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Table 'sendout': miss
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Action entry is NoAction - 
+[03:52:52.833] [bmv2] [T] [thread 11622] [25.0] [cxt 0] Action NoAction
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Pipeline 'ingress': end
+[03:52:52.833] [bmv2] [D] [thread 11622] [25.0] [cxt 0] Egress port is 0
+[03:52:52.833] [bmv2] [D] [thread 11623] [25.0] [cxt 0] Pipeline 'egress': start
+[03:52:52.833] [bmv2] [D] [thread 11623] [25.0] [cxt 0] Pipeline 'egress': end
+[03:52:52.833] [bmv2] [D] [thread 11623] [25.0] [cxt 0] Deparser 'deparser': start
+[03:52:52.833] [bmv2] [D] [thread 11623] [25.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:52.833] [bmv2] [D] [thread 11623] [25.0] [cxt 0] Deparser 'deparser': end
+[03:52:52.833] [bmv2] [D] [thread 11627] [25.0] [cxt 0] Transmitting packet of size 107 out of port 0
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Processing packet received on port 2
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser 'parser': start
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser state 'start' has no switch, going to default next state
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Bytes parsed: 0
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser 'parser' entering state 'parse_ethernet'
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Extracting header 'ethernet'
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser state 'parse_ethernet': key is 86dd
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Bytes parsed: 14
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Parser 'parser': end
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Pipeline 'ingress': start
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Applying table 'planet_fib_match'
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Looking up key:
+* planet.seq          : 00000000
+
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Table 'planet_fib_match': miss
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Action entry is NoAction - 
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Action NoAction
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Applying table 'sendout'
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0000
+
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Table 'sendout': miss
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Action entry is NoAction - 
+[03:52:53.103] [bmv2] [T] [thread 11622] [26.0] [cxt 0] Action NoAction
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Pipeline 'ingress': end
+[03:52:53.103] [bmv2] [D] [thread 11622] [26.0] [cxt 0] Egress port is 0
+[03:52:53.103] [bmv2] [D] [thread 11623] [26.0] [cxt 0] Pipeline 'egress': start
+[03:52:53.103] [bmv2] [D] [thread 11623] [26.0] [cxt 0] Pipeline 'egress': end
+[03:52:53.103] [bmv2] [D] [thread 11623] [26.0] [cxt 0] Deparser 'deparser': start
+[03:52:53.103] [bmv2] [D] [thread 11623] [26.0] [cxt 0] Deparsing header 'ethernet'
+[03:52:53.103] [bmv2] [D] [thread 11623] [26.0] [cxt 0] Deparser 'deparser': end
+[03:52:53.103] [bmv2] [D] [thread 11627] [26.0] [cxt 0] Transmitting packet of size 196 out of port 0

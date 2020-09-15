@@ -1,0 +1,35 @@
+{
+  "target": "bmv2",
+  "p4info": "build/basic.p4.p4info.txt",
+  "bmv2_json": "build/basic.json",
+  "table_entries": [
+    {
+      "table": "MyIngress.planet_fib_match",
+      "default_action": true,
+      "action_name": "MyIngress.on_miss",
+      "action_params": { }
+    },
+    {
+      "table": "MyIngress.planet_fib_match",
+      "match": {
+        "hdr.planet.seq":"163682"
+      },
+      "action_name": "MyIngress.sendout",
+      "action_params": {
+        "smac": "11:00:00:00:01:11",
+        "port": 1
+      }
+    },
+    {
+      "table": "MyIngress.planet_fib_match",
+      "match": {
+        "hdr.planet.seq": "163682"
+      },
+      "action_name": "MyIngress.sendout",
+      "action_params": {
+        "smac": "11:00:00:00:02:00",
+        "port": 2
+      }
+    }
+  ]
+}
