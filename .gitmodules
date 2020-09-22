@@ -1,0 +1,9 @@
+[submodule "EA080/ea080"]
+	path = EA080/ea080
+	url = https://github.com/intrig-unicamp/ea080
+[submodule "EA080/EA080-2S2019"]
+	path = EA080/EA080-2S2019
+	url = https://github.com/intrig-unicamp/EA080-2S2019
+[submodule "EA080/EA080-2S2020"]
+	path = EA080/EA080-2S2020
+	url = https://github.com/intrig-unicamp/EA080-2S2020
